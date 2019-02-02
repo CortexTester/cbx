@@ -23,13 +23,11 @@ namespace cbxApi.DataAccess.Models
 
         public ICollection<User> Users { get; set; }
 
-        public ICollection<Partner> Partners { get; set; }
+        public ICollection<Partner> Partners{ get; set; }
 
         public ICollection<Attribute> AttributeHistory { get; set; }
 
-        // public int? ParentId { get; set; }
-        // [ForeignKey(nameof(ParentId))]
-        // public Party Parent {get; set;}
+        public Party Children {get; set;}
 
     }
 }
